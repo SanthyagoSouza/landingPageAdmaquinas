@@ -292,5 +292,24 @@
         <p><a href="https://wa.me/5527996665624">(27) 99666-5624</a></p>
       </div>
     </footer>
+    <script>
+  const path = sessionStorage.getItem("redirect_path");
+
+  if (path) {
+    console.log("Rota acessada:", path);
+
+    // limpa depois de usar
+    sessionStorage.removeItem("redirect_path");
+
+    // Aqui você pode tratar rotas específicas
+    if (path.includes("pecas")) {
+      alert("Você será direcionado para a seção de peças!");
+      
+      document.querySelector(".parts")?.scrollIntoView({
+        behavior: "smooth"
+      });
+    }
+  }
+</script>
   </body>
 </html>
