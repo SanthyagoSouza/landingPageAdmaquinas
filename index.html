@@ -1,315 +1,292 @@
 <!doctype html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Admáquinas Soluções Técnicas</title>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Admáquinas Soluções Técnicas</title>
 
-    <style>
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
-
-      body {
-        font-family: Arial, sans-serif;
-        color: #6b7785;
-        line-height: 1.6;
-      }
-
-      .container {
-        max-width: 1200px;
-        margin: auto;
-        padding: 0 20px;
-      }
-
-      /* HEADER */
-      header {
-        background: #fff;
-        border-bottom: 1px solid #eee;
-      }
-      .header-content {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 20px 0;
-        flex-wrap: wrap;
-        gap: 15px;
-      }
-      header img {
-        height: 50px;
-      }
-
-      /* HERO */
-      .hero {
-        background: #2f3e55;
-        color: #fff;
-        padding: 80px 0;
-      }
-      .hero-content {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        gap: 40px;
-        flex-wrap: wrap;
-      }
-      .hero-text {
-        max-width: 500px;
-      }
-      .hero h1 {
-        font-size: 34px;
-        margin-bottom: 15px;
-      }
-      .hero p {
-        margin-bottom: 20px;
-      }
-      .hero img {
-        width: 400px;
-        max-width: 100%;
-        border-radius: 10px;
-      }
-
-      /* BOTÕES */
-      .btn {
-        background: #25d366;
-        color: #fff;
-        padding: 12px 20px;
-        border-radius: 6px;
-        text-decoration: none;
-        font-weight: bold;
-        display: inline-block;
-        margin-top: 10px;
-        transition: 0.3s;
-      }
-      .btn:hover {
-        opacity: 0.85;
-      }
-
-      /* SECTIONS */
-      section {
-        padding: 70px 0;
-      }
-
-      h2 {
-        color: #2f3e55;
-        margin-bottom: 25px;
-      }
-
-      /* GRID */
-      .grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        gap: 20px;
-        margin-top: 20px;
-      }
-
-      .card {
-        padding: 25px;
-        border: 1px solid #eee;
-        border-radius: 10px;
-        background: #fff;
-        transition: 0.3s;
-      }
-      .card:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
-      }
-
-      /* MARCAS */
-      .brands {
-        display: flex;
-        justify-content: center;
-        gap: 20px;
-        flex-wrap: wrap;
-        font-weight: bold;
-      }
-
-      /* IMAGENS */
-      .images img {
-        width: 100%;
-        height: 250px;
-        object-fit: cover;
-        border-radius: 10px;
-      }
-
-      /* PEÇAS */
-      .parts {
-        background: #f5f5f5;
-        text-align: center;
-      }
-      .parts .btn {
-        margin: 10px;
-      }
-
-      /* CTA */
-      .cta {
-        background: #2f3e55;
-        color: #fff;
-        text-align: center;
-      }
-      .cta .btn {
-        margin-top: 20px;
-      }
-
-      /* FOOTER */
-      footer {
-        background: #1e2a3a;
-        color: #fff;
-        padding: 40px 0;
-        text-align: center;
-      }
-
-      footer a {
-        color: #fff;
-      }
-
-      /* RESPONSIVO */
-      @media (max-width: 768px) {
-        .hero-content {
-          flex-direction: column;
-          text-align: center;
-        }
-
-        .hero-text {
-          max-width: 100%;
-        }
-
-        .hero img {
-          width: 100%;
-        }
-      }
-    </style>
-  </head>
-
-  <body>
-    <header>
-      <div class="container header-content">
-        <img src="logo-empresa.png" />
-        <a class="btn" href="https://wa.me/5527996665624">WhatsApp</a>
-      </div>
-    </header>
-
-    <section class="hero">
-      <div class="container hero-content">
-        <div class="hero-text">
-          <h1>Manutenção rápida para lavadoras profissionais</h1>
-          <p>
-            Evite prejuízo com máquinas paradas. Atendimento ágil para empresas
-            e lavanderias.
-          </p>
-          <a class="btn" href="https://wa.me/5527996665624"
-            >Solicitar atendimento</a
-          >
-        </div>
-
-        <img src="logo-empresa.png" />
-      </div>
-    </section>
-
-    <section>
-      <div class="container">
-        <h2>Serviços</h2>
-        <div class="grid">
-          <div class="card">Manutenção preventiva</div>
-          <div class="card">Manutenção corretiva</div>
-          <div class="card">Diagnóstico técnico</div>
-          <div class="card">Substituição de peças</div>
-        </div>
-      </div>
-    </section>
-
-    <section>
-      <div class="container">
-        <h2>Marcas atendidas</h2>
-        <div class="brands">Electrolux • Brastemp • Consul • LG • Samsung</div>
-      </div>
-    </section>
-
-    <section class="parts">
-      <div class="container">
-        <h2>Peças novas e usadas</h2>
-        <div class="grid">
-          <div class="card">Peças novas com garantia</div>
-          <div class="card">Peças usadas testadas</div>
-        </div>
-
-        <br />
-
-        <a class="btn" href="https://www.olx.com.br/">OLX</a>
-        <a class="btn" href="https://www.mercadolivre.com.br/">Mercado Livre</a>
-      </div>
-    </section>
-
-    <section>
-      <div class="container">
-        <h2>Serviços realizados</h2>
-        <div class="grid images">
-          <div>
-            <img src="logo-empresa.png" />
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit
-              dolorum laboriosam repellendus aut culpa fugit. Voluptatum sed
-              eveniet deserunt cumque fugit ut laboriosam nulla, deleniti
-              asperiores modi, debitis aperiam. Inventore?
-            </p>
-          </div>
-          <div>
-            <img src="logo-empresa.png" />
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit
-              dolorum laboriosam repellendus aut culpa fugit. Voluptatum sed
-              eveniet deserunt cumque fugit ut laboriosam nulla, deleniti
-              asperiores modi, debitis aperiam. Inventore?
-            </p>
-          </div>
-          <div>
-            <img src="logo-empresa.png" />
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit
-              dolorum laboriosam repellendus aut culpa fugit. Voluptatum sed
-              eveniet deserunt cumque fugit ut laboriosam nulla, deleniti
-              asperiores modi, debitis aperiam. Inventore?
-            </p>
-          </div>
- 
-        </div>
-      </div>
-    </section>
-
-    <section class="cta">
-      <div class="container">
-        <h2>Precisa de atendimento?</h2>
-        <p>Fale agora e resolva rápido.</p>
-        <a class="btn" href="https://wa.me/5527996665624">WhatsApp</a>
-      </div>
-    </section>
-
-    <footer>
-      <div class="container">
-        <h3>Admáquinas Soluções Técnicas</h3>
-        <p>Serra, Vitória, Vila Velha</p>
-        <p><a href="https://wa.me/5527996665624">(27) 99666-5624</a></p>
-      </div>
-    </footer>
-    <script>
-  const path = sessionStorage.getItem("redirect_path");
-
-  if (path) {
-    console.log("Rota acessada:", path);
-
-    // limpa depois de usar
-    sessionStorage.removeItem("redirect_path");
-
-    // Aqui você pode tratar rotas específicas
-    if (path.includes("pecas")) {
-      alert("Você será direcionado para a seção de peças!");
-      
-      document.querySelector(".parts")?.scrollIntoView({
-        behavior: "smooth"
-      });
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
     }
-  }
-</script>
-  </body>
+
+    body {
+      font-family: Arial, sans-serif;
+      color: #6b7785;
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 0 20px;
+    }
+
+    header {
+      border-bottom: 1px solid #eee;
+    }
+
+    .header-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 0;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+
+    header img {
+      height: 50px;
+    }
+
+    .hero {
+      background: #2f3e55;
+      color: #fff;
+      padding: 80px 0;
+    }
+
+    .hero-content {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 40px;
+      flex-wrap: wrap;
+    }
+
+    .hero-text {
+      max-width: 500px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .hero h1 {
+      font-size: 34px;
+      margin-bottom: 15px;
+    }
+
+    .hero p {
+      margin-bottom: 20px;
+    }
+
+    .hero img {
+      width: 400px;
+      max-width: 100%;
+      border-radius: 10px;
+    }
+
+    .btn {
+      background: #25d366;
+      color: #fff;
+      padding: 12px 20px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+      display: inline-block;
+      margin-top: 10px;
+      min-width: 180px;
+      text-align: center;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      opacity: 0.85;
+    }
+
+    section {
+      padding: 70px 0;
+    }
+
+    h2 {
+      color: #2f3e55;
+      margin-bottom: 25px;
+      text-align: center;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    .card {
+      padding: 25px;
+      border: 1px solid #eee;
+      border-radius: 10px;
+      background: #fff;
+      transition: 0.3s;
+      text-align: center;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+    }
+
+    .brands {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    .images img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-bottom: 10px;
+    }
+
+    .parts {
+      background: #f5f5f5;
+      text-align: center;
+    }
+
+    .actions {
+      margin-top: 20px;
+    }
+
+    .actions .btn {
+      margin: 5px;
+    }
+
+    .cta {
+      background: #2f3e55;
+      color: #fff;
+      text-align: center;
+    }
+
+    footer {
+      background: #1e2a3a;
+      color: #fff;
+      padding: 40px 0;
+      text-align: center;
+    }
+
+    footer a {
+      color: #fff;
+      text-decoration: underline;
+    }
+
+    @media (max-width: 768px) {
+      .hero-content {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .hero img {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="container header-content">
+    <img src="logo-empresa.png" alt="Admáquinas Soluções Técnicas">
+    <a class="btn" href="https://wa.me/5527996665624">WhatsApp</a>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="container hero-content">
+    
+    <div class="hero-text">
+      <h1>Manutenção rápida para lavadoras profissionais</h1>
+      <p>Evite prejuízo com máquinas paradas. Atendimento ágil para empresas e lavanderias.</p>
+      <a class="btn" href="https://wa.me/5527996665624">Solicitar atendimento</a>
+    </div>
+
+    <img src="logo-empresa.png" alt="Manutenção de máquina de lavar">
+
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <h2>Serviços</h2>
+    <div class="grid">
+      <div class="card">Manutenção preventiva</div>
+      <div class="card">Manutenção corretiva</div>
+      <div class="card">Diagnóstico técnico</div>
+      <div class="card">Substituição de peças</div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <h2>Marcas atendidas</h2>
+    <div class="brands">
+      Electrolux • Brastemp • Consul • LG • Samsung
+    </div>
+  </div>
+</section>
+
+<section class="parts">
+  <div class="container">
+    <h2>Peças novas e usadas</h2>
+
+    <div class="grid">
+      <div class="card">Peças novas com garantia</div>
+      <div class="card">Peças usadas testadas</div>
+    </div>
+
+    <div class="actions">
+      <a class="btn" href="https://www.olx.com.br/">Ver na OLX</a>
+      <a class="btn" href="https://www.mercadolivre.com.br/">Ver no Mercado Livre</a>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <h2>Serviços realizados</h2>
+
+    <div class="grid images">
+
+      <div class="card">
+        <img src="logo-empresa.png" alt="Troca de placa Electrolux">
+        <p>Troca de placa em lavadora Electrolux com falha no painel</p>
+      </div>
+
+      <div class="card">
+        <img src="logo-empresa.png" alt="Manutenção Brastemp">
+        <p>Manutenção corretiva em lavadora Brastemp com problema de centrifugação</p>
+      </div>
+
+      <div class="card">
+        <img src="logo-empresa.png" alt="Reparo Consul">
+        <p>Reparo em sistema elétrico de lavadora Consul</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="cta">
+  <div class="container">
+    <h2>Precisa de atendimento?</h2>
+    <p>Fale agora e resolva rápido.</p>
+    <a class="btn" href="https://wa.me/5527996665624">WhatsApp</a>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <h3>Admáquinas Soluções Técnicas</h3>
+    <p>Serra, Vitória, Vila Velha</p>
+    <p><a href="https://wa.me/5527996665624">(27) 99666-5624</a></p>
+  </div>
+</footer>
+
+</body>
 </html>
